@@ -1,8 +1,8 @@
 import boto3
 
 config = {
-    'aws_access_key_id': 'AKIAZ6RF4EGJR5SB4J3W',
-    'aws_secret_access_key': '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',
+    'aws_access_key_id': '',
+    'aws_secret_access_key': '',
     'region_name': 'us-east-1'
 }
 
