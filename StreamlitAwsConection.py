@@ -1,7 +1,12 @@
 import streamlit as st
+
+
+
+
 import pandas as pd
 from io import StringIO
 import boto3
+
 
 config = {
     'aws_access_key_id': 'AKIAZ6RF4EGJR5SB4J3W',
@@ -12,6 +17,16 @@ config = {
 client = boto3.client('s3', aws_access_key_id=config['aws_access_key_id'], 
                       aws_secret_access_key=config['aws_secret_access_key'], 
                       region_name=config['region_name'])
+
+st.set_page_config(
+    page_title="Old School Spirits - Cloud",
+    page_icon= "🥃",
+    layout="wide",
+    initial_sidebar_state="expanded",
+   
+)
+
+st.title("Old School Spirits - Cloud")
 
 uploaded_file = st.file_uploader("Choose a file")
 if uploaded_file is not None:
